@@ -6,7 +6,7 @@ services:
     image: djfarrelly/maildev
     restart: always
     ports:
-      - '1025:25'
+      - '25:25'
     environment:
       - VIRTUAL_HOST
 networks:
