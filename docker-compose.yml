@@ -1,4 +1,4 @@
-version: "3"
+version: '3'
 
 services:
   maildev:
@@ -6,8 +6,9 @@ services:
     image: djfarrelly/maildev
     restart: always
     ports:
-      - "25:25"
+      - '1025:25'
     environment:
+      - VIRTUAL_PORT=1080
       - VIRTUAL_HOST
 networks:
   default:
